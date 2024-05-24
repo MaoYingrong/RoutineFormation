@@ -20,7 +20,7 @@ To run the model interactively, run ``run.py`` in this directory. e.g.
 * ``server.py``: Sets up the interactive visualization.
 * ``batch_run.ipynb``: Jupyter notebook conducting some preliminary analysis of the model.
 
-## Further Reading
+## Reference
 
 This model is based adapted from:
 
