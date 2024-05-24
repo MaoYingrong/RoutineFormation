@@ -53,8 +53,8 @@ def txt_description(model):
     return f"The present status: {model.status}\
         <br>Current task: {model.tasks_lst[0]}\
         <br>Searching list: {str(result)}\
-        <br>Current routine: {model.routine}\
-        <br><br>Routine list: {model.routine_lst}"
+        <br>Current action sequence: {model.routine}\
+        <br><br>Action sequence list: {model.routine_lst}"
 
 
 
