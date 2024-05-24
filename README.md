@@ -18,11 +18,11 @@ To run the model interactively, run ``run.py`` in this directory. e.g.
 * ``model.py``: Core model code.
 * ``agent.py``: Core agent code.
 * ``server.py``: Sets up the interactive visualization.
-* ``batch_run.ipynb``: Jupyter notebook conducting some preliminary analysis of the model.
+* ``batch_run.py``: Code used to conduct batch run.
 
 ## References
 
-This model is based adapted from:
+This model is adapted from:
 
 Miller, K. D., Choi, S., & Pentland, B. T. (2014). The role of transactive memory in the formation of organizational routines. Strategic Organization, 12(2), 109-133.  
 
