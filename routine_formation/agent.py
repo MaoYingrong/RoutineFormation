@@ -44,6 +44,12 @@ class ActorAgent(mesa.Agent):
 
 
     def update_all_memory(self, task):
+        """
+        Updates the memory of all parent agents in the hierarchy.
+        
+        Args:
+        task (str): The task for which the memory should be updated.
+        """
         working_agent = self
         agent = self.parent
         while agent:
@@ -56,7 +62,17 @@ class ActorAgent(mesa.Agent):
 
 
     def step(self, task):
-        """Actors' decision-making process"""
+        """
+        Actors' decision-making process to determine if they can perform a task.
+        
+        Args:
+        task (str): The task to be considered in this step.
+        
+        Returns:
+        tuple: A tuple containing a boolean and a list, where the boolean indicates
+               if the task can be performed, and the list contains the agents
+               involved in the task.
+        """
         task = self.model.tasks_lst[0]
         know_others, actor = self.know_others(task)
 
@@ -71,7 +87,3 @@ class ActorAgent(mesa.Agent):
             working_agent = actor
 
         return True, [working_agent]
-
-
-        
-
